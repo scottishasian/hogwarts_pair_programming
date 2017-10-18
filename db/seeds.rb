@@ -1,4 +1,4 @@
-require('pry')
+# require('pry')
 require_relative('../models/student.rb')
 
 student1 =  Student.new(
@@ -23,5 +23,5 @@ student1.save()
 student2.save()
 
 
-binding.pry
-nil
+# binding.pry
+# nil

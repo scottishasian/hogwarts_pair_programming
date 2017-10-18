@@ -14,6 +14,11 @@ class Student
     @age = options["age"].to_i
   end
 
+  def pretty_name()
+    return "#{@first_name} #{@last_name}"
+  end
+
+
   def save()
     sql = "INSERT INTO students (
           first_name,
@@ -42,5 +47,14 @@ class Student
     result = students.map{ |student| Student.new(student)}
     return result
   end
-  
+
+  def self.find(id)
+    sql = "SELECT * FROM students
+           WHERE id = $1"
+    values = [id]
+    student = SqlRunner.run(sql, values)
+    result = Student.new(student.first)
+    return result
+  end
+
 end
