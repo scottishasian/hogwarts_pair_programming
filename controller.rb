@@ -9,6 +9,10 @@ get '/students' do
   erb(:index)
 end
 
+get '/' do
+  erb(:home)
+end
+
 get '/students/new' do
   erb(:new)
 end

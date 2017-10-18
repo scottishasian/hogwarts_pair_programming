@@ -1,5 +1,22 @@
 p {
   text-align: center;
+
+}
+
+.students {
+  padding: 10px;
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+.students p {
+    border: solid 1px black;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
 }
 
 img {

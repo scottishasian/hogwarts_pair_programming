@@ -18,13 +18,13 @@ house2 = House.new(
 house3 = House.new(
   {
     'house_name' => "Ravenclaw",
-    'house_logo' => "https://i.pinimg.com/736x/31/18/ac/3118ac5750ee55f0b31ba571e551708e--house-trees-a-house.jpg",
+    'house_logo' => "https://i.pinimg.com/236x/64/7b/63/647b634907ce6d9412b51a5e45f12b41--house-logos-logo-ideas.jpg",
   }
 )
 house4 = House.new(
   {
     'house_name' => "Slytherin",
-    'house_logo' => "https://i.pinimg.com/736x/b7/71/51/b77151ec8ecf2bbcbfe704151ab3a0ab--logo-design-house-hotel-logo-design.jpg",
+    'house_logo' => "https://designmodo.com/wp-content/uploads/2011/04/Creative-Logos-Houses-17.jpg",
   }
 )
 
@@ -56,5 +56,5 @@ student2.save()
 
 
 
-binding.pry
-nil
+# binding.pry
+# nil
