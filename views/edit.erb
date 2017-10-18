@@ -17,10 +17,10 @@
 
   <label for="house-field">House:</label>
   <select name="house" id="house-field">
-    <option value="Gryffindor" <%= "selected" if @student.house == "Gryffindor" %>>Gryffindor</option>
-    <option value="Hufflepuff" <%= "selected" if @student.house == "Hufflepuff" %>>Hufflepuff</option>
-    <option value="Ravenclaw" <%= "selected" if @student.house == "Ravenclaw" %>>Ravenclaw</option>
-    <option value="Slytherin" <%= "selected" if @student.house == "Slytherin" %>>Slytherin</option>
+    <option value="Gryffindor" <%= "selected" if @student.house_id == "1" %>>Gryffindor</option>
+    <option value="Hufflepuff" <%= "selected" if @student.house_id == "2" %>>Hufflepuff</option>
+    <option value="Ravenclaw" <%= "selected" if @student.house_id == "3" %>>Ravenclaw</option>
+    <option value="Slytherin" <%= "selected" if @student.house_id == "4" %>>Slytherin</option>
   </select>
 
   <label for="age-field">Age:</label>

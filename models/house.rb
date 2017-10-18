@@ -1,25 +1,23 @@
 require("pg")
 
 class House
-  attr_reader :house_name, :house_logo, :student_id, :id
+  attr_reader :house_name, :house_logo, :id
 
   def initialize(options)
     @id = options["id"].to_i if options["id"]
     @house_name = options["house_name"]
     @house_logo = options["house_logo"]
-    @student_id = options["student_id"].to_i
   end
 
   def save()
     sql = "INSERT INTO houses (
           house_name,
-          house_logo,
-          student_id
+          house_logo
           )
 
-          VALUES ($1, $2, $3)
+          VALUES ($1, $2)
           RETURNING *"
-    values = [@house_name, @house_logo, @student_id]
+    values = [@house_name, @house_logo]
     result = SqlRunner.run(sql, values).first
     @id = result["id"].to_i
   end
