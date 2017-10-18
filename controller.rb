@@ -13,6 +13,18 @@ get '/students/new' do
   erb(:new)
 end
 
+get '/students/:id/edit' do
+  @student = Student.find(params[:id])
+  erb(:edit)
+end
+
+post '/students/:id' do
+  @student = Student.new(params)
+  @student.update
+  result = '/students/' + @student.id.to_s
+  redirect result
+end
+
 get '/students/:id' do
   @student = Student.find(params[:id])
   erb(:show)
