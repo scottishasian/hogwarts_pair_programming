@@ -23,3 +23,9 @@ post '/students' do
   @student.save()
   erb(:create)
 end
+
+post '/students/:id/delete' do
+  student = Student.find(params[:id])
+  student.delete()
+  erb(:delete)
+end
