@@ -1,6 +1,7 @@
 <p> First Name: <%= @student.first_name %> </p>
 <p> Last Name: <%= @student.last_name %> </p>
 <p> House: <%= @student.house %>  </p>
+  <img src= "<%= @student.house_img %>" />
 <p> Age: <%= @student.age %> </p>
 
 <form method="post" action="/students/<%= @student.id %>/delete">

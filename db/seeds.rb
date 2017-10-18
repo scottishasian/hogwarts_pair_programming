@@ -24,7 +24,7 @@ house3 = House.new(
 house4 = House.new(
   {
     'house_name' => "Slytherin",
-    'house_logo' => "https://i.pinimg.com/736x/31/18/ac/3118ac5750ee55f0b31ba571e551708e--house-trees-a-house.jpg",
+    'house_logo' => "https://i.pinimg.com/736x/b7/71/51/b77151ec8ecf2bbcbfe704151ab3a0ab--logo-design-house-hotel-logo-design.jpg",
   }
 )
 

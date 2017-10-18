@@ -77,4 +77,15 @@ class Student
     return house_details.house_name
   end
 
+  def house_img()
+    sql = "SELECT * FROM houses
+           WHERE id = $1"
+    values = [@house_id]
+    result = SqlRunner.run(sql, values)
+    house_info = result[0]
+    house_details = House.new(house_info)
+    return house_details.house_logo
+  end
+
+
 end
